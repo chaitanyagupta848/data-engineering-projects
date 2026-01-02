@@ -1,21 +1,25 @@
-# CI/CD & Monitoring for Data Pipelines
+# CI/CD, Docker & Monitoring for Data Pipelines
 
 ## Overview
-Demonstrates CI/CD and monitoring practices for data pipelines
-using Jenkins, Docker, and logging tools.
+This project demonstrates how production-grade data pipelines are
+built, deployed, and monitored using CI/CD and containerization.
 
-## CI/CD Flow
-GitHub → Jenkins → Build → Test → Deploy
+## Architecture
+GitHub → Jenkins → Docker → Spark Job → Logs & Monitoring
 
-## Tools
-- GitHub
-- Jenkins
-- Docker
-- Spark
-- Logging & Monitoring (Splunk-style)
+## Components
+- Spark job for data processing
+- Docker image for portability
+- Jenkins pipeline for CI/CD automation
+- Centralized logging for monitoring
 
-## Production Practices
-- Automated builds
-- Version control
-- Failure handling
-- Retry & alert mechanisms
+## Key Highlights
+- Automated build & deployment
+- Containerized Spark execution
+- Production-style logging
+- Failure visibility & recovery
+
+## Real-World Use
+- Enterprise data platforms
+- Production support teams
+- DevOps-enabled data engineering
